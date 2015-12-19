@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="imageSlider/js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $("#btn").on("click", function () {
+                alert("boom");
+                console.log($("#div1").html());
+                $("#div1").html("<div>newHtml</div>");
+                console.log($("#text").val());
+                $("#text").val("newText");
+                $("#img").attr("src", function(i,oldValue){
+                    console.log(i,oldValue);
+                    return "imageSlider/images/2.jpg";
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="div1">
+    <ul>asdlfkasdf</ul>
+</div>
+<input type="button" value="change" id="btn">
+<input type="text" value="boom" id="text">
+<img src="imageSlider/images/1.jpg" id="img">
+</body>
+</html>

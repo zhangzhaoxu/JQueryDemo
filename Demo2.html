@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="imageSlider/js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(window).on("load", function () {
+//            document.getElementById("btn").addEventListener('click', function () {
+//                document.getElementById("div1").style.height = "200px";
+//            });
+            $("#btn").on("click", function () {
+                $("#div1").css("height","200px")
+                        .css("background-color","green")
+                        .fadeTo(2,0.2);
+            })
+        })
+    </script>
+</head>
+<body>
+<div style="width: 300px;height: 300px;background-color: red;margin: auto" id="div1"></div>
+<input type="button" style="margin-left: 48%" id="btn" value="change">
+</body>
+</html>

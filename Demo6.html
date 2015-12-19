@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Selector</title>
+    <script src="imageSlider/js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $("button").click(function(){
+                $("h1,h2,p").toggleClass("red");
+            });
+        })
+    </script>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>我要变色了</h1>
+<button>change</button>
+</body>
+</html>
